@@ -69,3 +69,4 @@ console.log(obj);
 console.log(obj.name);
 console.log(obj.favpets[1]);
 console.log(console);
+console.log(array.length);
