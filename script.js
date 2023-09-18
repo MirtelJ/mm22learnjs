@@ -1,72 +1,66 @@
-let num = 2;
+let num = 10;
 
-console.log(num);
+if(num > 10) {
+    console.log('Suurem');
+} else if(num === 10) {
+    console.log('Võrdne');
+} else {
+    console.log('Väiksem');
+}  
 
-num=num+2;
+let day = 11;
 
-num=5 +4+6+8;
+switch(day){
+    case 0:
+        console.log('Esmaspäev');
+        break;
+     case 1:
+        console.log('Teisipäev');
+        break;   
+    case 2:
+        console.log('Kolmapäev');
+        break;
+     case 3:
+        console.log('Neljapäev');
+        break;
+    case 4:
+        console.log('Reede');
+        break;
+    case 5:
+    case 6:
+        console.log('Nädalavahtus');
+        break;
+    default:
+        console.log('Imeik päev');
+        break;
+}
+for(let i=1_000_000; i>1; i/=2){
+    console.log(i);
+}
 
-num+=4;
-num/=66;
-num--;
-num=13%2;
-num=2;
-num**3;
-console.log(typeof num);
+// let minutes = new Date().getMinutes();
+// console.log(minutes);
+// while(minutes+1 != new Date().getMinutes()){
+//     console.log('old minutes');
+// }
+// console.log('new minutes has startd');
 
-let string='hello world';
-string +='!!!!!!';
-console.log(string);
-console.log(typeof string);
-let bool = true;
-bool=false;
-bool=false&&true;
-bool=false||true;
-bool=!bool;
-bool= false && true || true && !false;
-num=10;
-bool=2>num;
-bool=2<num;
-bool=10<num;
-bool=10==num;
-bool=10<= num;
-bool=10>= num;
-bool=10!= num;
-bool=10 ==num;
-bool='10'=== num;
-bool='10'!== num;
-console.log(bool);
-console.log(typeof bool);
+let i=1;
+while(i=10) {
+    console.log('while '+i);
+}
 
-let noValue=null;
-let noValue2;
-console.log(noValue2); //undefined
-num=0*-1;
-num=0.1+0.2;
-console.log(num);
-let array=[1,2,3,4];
-array=[1, 'hello', true,undefined,null];
-console.log(array);
-console.log(array[0]);
-array[0]=7;
-console.log(array);
-array=[
-[1,2,3],
-[4,5,6],
-[7,8,9],
-]
-console.log(array);
-console.log(array[1][2]);
-array=[[[[[5]]]]];
-console.log(array[0][0][0][0][0]);
-let obj={
-    name: 'Mirtel',
-    age: 17,
-    eyeColor: 'green',
-    favpets: ['dogs','cats','rats']
-};
-console.log(obj);
-console.log(obj.name);
-console.log(obj.favpets[1]);
-console.log(console);
-console.log(array.length);
+i=1;
+do {
+    console.log('do ' + i);
+} while(i>10);
+
+let fruits = ['apple', 'cherry', 'strawberry', 'pear'];
+
+for(let i= 0; i<fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+fruits.forEach(function (fruit) {
+    console.log(fruits);
+});
