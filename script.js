@@ -1,26 +1,19 @@
 // console.log(window,{document});
-let title = document.getElementById('title');
-console.log({title});
-
-setTimeout(() => {
-    title.innerText = 'Goodbye Js';
-    title.classList.add('green');
-}, 5000); 
-let r, g, b;
-setInterval(() => {
-    r = Math.round(Math.random() * 255);
-    g = Math.round(Math.random() * 255);
-    b = Math.round(Math.random() * 255);
-    document.body.style.background = `rgb(${r}, ${g}, ${b})`;
-    if(title.classList.contains('green')) {
-        title.classList.replace('green', 'red');
-    } else {
-        title.classList.replace('red', 'green');
-    }
-},1000);
-
-let textinput = document.querySelector('#textinput');
-textinput.addEventListener('input', evt => {
-    console.log(evt);
-    title.innerText = textinput.value.split('').reverse().join('');
-});
+// setTimeout(() => {
+//     document.location = 'https://google.com';
+// }, 5000);
+let canvas = document.querySelector('canvas');
+let ctx = canvas.getContext('2d');
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(100,100, 50, 0, 2 * Math.PI);
+ctx.fillStyle = 'red'
+ctx.lineWidth = 3;
+ctx.stroke();
+ctx.font = '30px Arial';
+ctx.fillText('Hello Canvas', 30, 50);
+ctx.strokeText('Hello Canvas', 30, 100);
+ctx.fillStyle = '#ff0'
+ctx.fillRect(10, 10, 10, 10);

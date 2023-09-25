@@ -1,6 +1,9 @@
 .green {
-    color: green;
+    color: rgb(240, 141, 218);
 }
 .red {
-    color: red;
+    color: rgb(255, 186, 229);
+}
+canvas {
+    border:  1px pink solid;
 }
